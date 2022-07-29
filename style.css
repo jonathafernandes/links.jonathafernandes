@@ -9,26 +9,26 @@ a {
 }
 
 html {
-  --bg--color: #EDF2FF;
-  --text-color: #00082F;
-  --primary-color: #4263EB;
-  --primary-color-dark: #364FC7;
+  --bg--color: #edf2ff;
+  --text-color: #00082f;
+  --primary-color: #4263eb;
+  --primary-color-dark: #364fc7;
 }
 
 body.dark-blue {
-  --bg-color: #00082F;
-  --text-color: #FFFFFF;
+  --bg-color: #00082f;
+  --text-color: #ffffff;
 }
 
 body.pink {
-  --bg-color: #FFF0F6;
-  --text-color: #1F000B;
-  --primary-color: #D6336C;
-  --primary-color-dark: #A61E4D;
+  --bg-color: #fff0f6;
+  --text-color: #1f000b;
+  --primary-color: #d6336c;
+  --primary-color-dark: #a61e4d;
 }
 
 body.dark-green {
-  --bg-color: #3f757b;
+  --bg-color: #19292b;
   --text-color: white;
   --primary-color: #a1c122;
   --primary-color-dark: #989c4f;
@@ -62,7 +62,6 @@ h1 {
   font-size: 32px;
   margin-top: 24px;
   margin-bottom: 8px;
-
 }
 
 h3 {
