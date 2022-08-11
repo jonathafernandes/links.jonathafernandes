@@ -11,12 +11,12 @@ a {
 html {
   --bg--color: #edf2ff;
   --text-color: #00082f;
-  --primary-color: #4263eb;
+  --primary-color: #41555a;
   --primary-color-dark: #364fc7;
 }
 
 body.dark-blue {
-  --bg-color: #00082f;
+  --bg-color: #02040c;
   --text-color: #ffffff;
 }
 
