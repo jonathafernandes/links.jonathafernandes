@@ -95,9 +95,9 @@ ul li a:hover {
 }
 
 footer {
-  height: 150px;
+  margin-top: 150px;
   font-weight: 500;
   font-size: 12px;
-  opacity: 0.9;
+  opacity: 0.5;
   color: var(--text-color);
 }
