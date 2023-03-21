@@ -95,9 +95,23 @@ ul li a:hover {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   margin-top: 150px;
+
   font-weight: 500;
   font-size: 12px;
   opacity: 0.5;
   color: var(--text-color);
+}
+
+footer img {
+  width: 40px;
+}
+
+.powered-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
