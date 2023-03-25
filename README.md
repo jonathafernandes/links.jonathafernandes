@@ -3,12 +3,6 @@
 <p align="center">
 Página de agrupamento de links.
 <br>
-</p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-<br>
-
 <p align="center">
   <img alt="" src="./imagens/layout.jpg" width="100%">
 </p>
