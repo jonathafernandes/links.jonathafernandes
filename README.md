@@ -13,7 +13,7 @@ Página de agrupamento de links.
 <br>
 
 <p align="center">
-  <img alt="" src="./imagens/layout.png" width="100%">
+  <img alt="" src="./imagens/layout.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -22,10 +22,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - Git e Github
-
-## 💻 Projeto
-
-Layout inspirado nos jogos 8 bit.
 
 ## 🖱️ Visite
 
