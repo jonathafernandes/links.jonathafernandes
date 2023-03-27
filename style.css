@@ -30,7 +30,7 @@ img.avatar {
   width: 100px;
   height: 100px;
   padding: 0px;
-  
+  border-radius: 50%;
 }
 
 .avatar {
