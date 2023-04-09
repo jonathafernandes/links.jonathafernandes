@@ -90,7 +90,7 @@ ul li a:hover {
 footer {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 40px;
 
   font-weight: 500;
   font-size: 12px;
@@ -105,4 +105,10 @@ footer img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 930px){
+  footer {
+    margin-top: 100px;
+  }
 }
