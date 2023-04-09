@@ -4,7 +4,7 @@
 Página de agrupamento de links.
 <br>
 <p align="center">
-  <img alt="" src="./imagens/layout.jpg" width="30%">
+  <img alt="" src="./imagens/layout.jpg" width="50%">
 </p>
 
 ## 🚀 Tecnologias
