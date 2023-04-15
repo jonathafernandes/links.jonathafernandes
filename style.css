@@ -4,20 +4,34 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #455940;
+  --primary-color-dark: #3a4142;
+  --text-color: #a9b68d;
+  --text-color-secondary: #8dba2c;
+  background-color: #000;
+  --swicth-bg-url: url(./images/moon-stars.svg);
+}
+
+.light {
+  background-color: #e5e5e5;
+  --primary-color: #45594047;
+  --primary-color-dark: #3a414254;
+  --text-color: #646a55;
+  --text-color-secondary: #719526;
+  --swicth-bg-url: url(./images/sun.svg);
+}
+
 a {
   text-decoration: none;
 }
 
-html {
-  --primary-color: #455940;
-  --primary-color-dark: #3a4142;
+body {
+  height: 100vh;
 }
 
-body {
+body * {
   font-family: 'Silkscreen', sans-serif;
-  background-color: #000;
-  --text-color: #a9b68d;
-  --text-color-secondary: #8dba2c;
 }
 
 .container {
@@ -51,10 +65,44 @@ p.caption {
   color: var(--text-color);
 }
 
-.image-logo {
-  width: 70px;
-  height: none;
-  opacity: 0.9;
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 18px auto;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--swicth-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    animation: slide-back 0.2s;
+}
+
+.light #switch button {
+    animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    border-radius: 9999px;
 }
 
 ul {
@@ -90,8 +138,9 @@ ul li a:hover {
 footer {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-bottom: 20px;
 
+  text-align: center;
   font-weight: 500;
   font-size: 12px;
   color:  #999999;
@@ -105,6 +154,7 @@ footer img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 @media (max-width: 930px){
@@ -112,3 +162,20 @@ footer img {
     margin-top: 100px;
   }
 }
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+  }

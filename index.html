@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,10 +17,14 @@
 
 <body>
   <div class="container">
-    <img class="avatar" src="./imagens/avatar.png" alt="Imagem de perfil do Jonatha" />
+    <img class="avatar" src="./images/avatar.png" alt="Imagem de perfil do Jonatha" />
     <h1>Jonatha Fernandes</h1>
     <p class="caption">Desenvolvedor web</p>
-    <br />
+
+    <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+    </div>
 
     <ul>
       <li>
@@ -39,17 +43,21 @@
         <a href="https://twitter.com/_jonatha__" target="_blank">Twitter</a>
       </li>
     </ul>
+  </div>
 
     <footer>
-      <p>&copy; 2023 Jonatha Fernandes.</p>
-      <div class="powered-by">
-        <p>Powered by</p>
-        <a href="https://jonatha-fernandes.vercel.app/" target="_blank">
-          <img src="./imagens/logo.png" alt="">
-        </a>
-      </div>
-    </footer>
-  </div>
+    <p>&copy; 2023 Jonatha Fernandes.</p>
+    <div class="powered-by">
+      <p>Powered by</p>
+      <a href="https://jonatha-fernandes.vercel.app/" target="_blank">
+        <img src="./images/logo.png" alt="">
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="./script.js"></script>
 </body>
 
 </html>
