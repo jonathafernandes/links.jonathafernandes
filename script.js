@@ -1,9 +1,15 @@
-function toggleMode() {
-    const html = document.documentElement;
+document.addEventListener('DOMContentLoaded', function () {
+    function toggleMode() {
+        const html = document.documentElement;
 
-    if (html.classList.contains('light')) {
-        html.classList.remove('light');
-    } else {
-        html.classList.add('light');
+        if (html.classList.contains('dark')) {
+            html.classList.remove('dark');
+            html.classList.add('light');
+        } else {
+            html.classList.remove('light');
+            html.classList.add('dark');
+        }
     }
-}
+
+    document.getElementById('switch').addEventListener('click', toggleMode);
+});

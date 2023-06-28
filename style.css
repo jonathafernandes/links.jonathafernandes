@@ -87,12 +87,16 @@ p.caption {
     animation: slide-back 0.2s;
 }
 
-.light #switch button {
-    animation: slide-in 0.2s forwards;
+#switch button {
+  cursor: pointer;
+
+  border: none;
 }
 
-#switch button:hover {
-    outline: 8px solid var(--highlight-color);
+.light #switch button {
+    animation: slide-in 0.2s forwards;
+
+    cursor: pointer;
 }
 
 #switch span {
@@ -179,3 +183,4 @@ footer img {
     to {
         left: 0;
   }
+}
