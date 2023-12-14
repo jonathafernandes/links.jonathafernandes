@@ -1,20 +1,19 @@
-<h1 align="center"> Links Sociais </h1>
+<h2 align="center">Links</h2>
 
 <p align="center">
-Página de agrupamento de links.
-<br>
-<p align="center">
-  <img alt="" src="./imagens/layout.jpg" width="50%">
+  Página de agrupamento de links.
+  <br>
 </p>
 
-## 🚀 Tecnologias
+### 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
+- JavaSript
 - Git e Github
 
-## 🖱️ Visite
+### 🖱️ Visite
 
 https://jonathafernandes.github.io/links-sociais/
 
