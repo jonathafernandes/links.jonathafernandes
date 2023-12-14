@@ -7,46 +7,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
-  <title>Links | Jonatha Fernandes</title>
+  <title>Jonatha Fernandes | Desenvolvedor web</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
   <div class="container">
-    <img class="avatar" src="./images/avatar.jpg" alt="Imagem de perfil do Jonatha" />
-    <h1>Jonatha Fernandes</h1>
-    <p class="caption">Desenvolvedor web</p>
-
-    <div id="switch" onclick="toggleMode()">
+    <header>
+      <img class="avatar" src="./images/avatar.jpg" alt="Imagem de perfil do Jonatha" />
+      <div class="header-text">
+        <h1>Jonatha Fernandes</h1>
+        <p class="caption">Desenvolvedor web</p>
+        <ul>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+      <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
-    </div>
+      </div>
+    </header>
 
-    <ul>
-      <li>
-        <a href="https://github.com/jonathafernandes" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">Linkedin</a>
-      </li>
-      <li>
-        <a href="https://jonatha-fernandes.vercel.app/" target="_blank">Portfólio</a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/_jonathafernandes/" target="_blank">Instagram</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/_jonatha__" target="_blank">Twitter</a>
-      </li>
-    </ul>
+    <main>
+      <div class="project-content">
+        <h4>Último projeto</h4>
+        <br>
+        <div id="userData">
+          <ul id="repositories-list"></ul>
+      </div>
+      </div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://github.com/jonathafernandes" target="_blank">
+              GitHub
+              <i class="ph-fill ph-github-logo"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
+              Linkedin
+              <i class="ph-fill ph-linkedin-logo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://jonatha-fernandes.vercel.app/" target="_blank">
+              Portfólio
+              <i class="ph-fill ph-tote"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_jonathafernandes/" target="_blank">
+              Instagram
+              <i class="ph-fill ph-instagram-logo"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/_jonatha__" target="_blank">
+              Twitter
+              <i class="ph-fill ph-twitter-logo"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
   </div>
 
-    <footer>
+  <footer>
     <p>&copy; 2023 Jonatha Fernandes.</p>
     <div class="powered-by">
       <p>Powered by</p>
@@ -56,8 +93,6 @@
     </div>
   </footer>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="./script.js"></script>
 </body>
 
