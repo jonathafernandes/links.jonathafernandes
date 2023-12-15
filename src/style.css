@@ -22,10 +22,6 @@
   --swicth-bg-url: url(./images/sun.svg);
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   height: 100vh;
 }
@@ -34,8 +30,19 @@ body * {
   font-family: 'Silkscreen', sans-serif;
 }
 
+
+ul {
+  list-style: none;
+
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
-  margin: 2.5rem 20vw;
+  margin: 2rem 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -130,10 +137,10 @@ main {
   margin-top: 2rem;
 }
 
-ul {
-  list-style: none;
-
-  margin-top: 5px;
+.social ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .social ul li a {
@@ -142,15 +149,13 @@ ul {
   align-items: center;
   gap: 0.3rem;
   justify-content: center;
-  background: var(--primary-color);
   color: var(--text-color);
   text-transform: uppercase;
   font-size: 0.875em;
 
-  margin-bottom: 5px;
-  padding: 1rem;
+  padding: 1rem 0;
 
-  border-radius: 5px;
+  border-bottom: 1px solid var(--primary-color-dark);
   transition: background 400ms;
 }
 
@@ -158,7 +163,7 @@ ul {
   background: var(--primary-color-dark);
 }
 
-.project-content {
+.project-content, .social {
   background: var(--primary-color);
   color: var(--text-color);
   
