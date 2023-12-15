@@ -18,7 +18,7 @@
   --primary-color-dark: #3a4142;
   --text-color: #a9b68d;
   --text-color-secondary: #d3eba1;
-  background-color: #000;
+  background-color: #1a1a1a;
   --swicth-bg-url: url(./images/sun.svg);
 }
 
@@ -161,10 +161,12 @@ ul {
 .project-content {
   background: var(--primary-color);
   color: var(--text-color);
+  
   border-radius: 5px;
 
   margin: 5px 0;
   padding: 1rem;
+  width: 100%;
 }
 
 #repositories-list span {
@@ -174,8 +176,24 @@ ul {
 .repo-buttons {
   display: flex;
   gap: 2rem;
-  /* justify-content: center; */
   margin-top: 2rem;
+}
+
+.repo-buttons a {
+  border: 1px solid var(--text-color-secondary);
+  background: var(--primary-color);
+  color: var(--text-color-secondary);
+
+  padding: 0.3rem;
+}
+
+.repo-buttons a:hover {
+  background: var(--text-color-secondary);
+  color: #fff;
+}
+
+.dark .repo-buttons a:hover {
+  color: #1a1a1a;
 }
 
 footer {
@@ -199,7 +217,7 @@ footer img {
   justify-content: center;
 }
 
-@media (max-width: 930px){
+@media (max-width: 995px){
   header, main {
     flex-direction: column;
     align-items: center;

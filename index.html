@@ -15,13 +15,13 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./src/style.css" />
 </head>
 
 <body>
   <div class="container">
     <header>
-      <img class="avatar" src="./images/avatar.jpg" alt="Imagem de perfil do Jonatha" />
+      <img class="avatar" src="https://github.com/jonathafernandes.png" alt="Imagem de perfil de Jonatha" />
       <div class="header-text">
         <h1>Jonatha Fernandes</h1>
         <p class="caption">Desenvolvedor web</p>
@@ -41,6 +41,8 @@
     <main>
       <div class="project-content">
         <h4>Último projeto</h4>
+        <br>
+        <hr>
         <br>
         <div id="userData">
           <ul id="repositories-list"></ul>
@@ -88,12 +90,13 @@
     <div class="powered-by">
       <p>Powered by</p>
       <a href="https://jonatha-fernandes.vercel.app/" target="_blank">
-        <img src="./images/logo.png" alt="">
+        <img src="./src/images/logo.png" alt="">
       </a>
     </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="./src/toggleMode.js"></script>
+  <script src="./src/repoData.js"></script>
 </body>
 
 </html>

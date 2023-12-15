@@ -1,18 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    function toggleMode() {
-        const html = document.documentElement;
-
-        if (html.classList.contains('dark')) {
-            html.classList.remove('dark');
-            html.classList.add('light');
-        } else {
-            html.classList.remove('light');
-            html.classList.add('dark');
-        }
-    }
-
-    document.getElementById('switch').addEventListener('click', toggleMode);
-});
 
 const userData = document.getElementById("userData");
 
@@ -46,8 +31,6 @@ async function getSpecificRepositories() {
         listItem.innerHTML = `
             <h5>${repo.name}</h5>
             <br>
-            <hr>
-            <br>
             <span>${repo.description}<span>
             <div class="repo-buttons">
                 <a href="${repo.homepage}" target="_blank">Visite</a>
@@ -63,4 +46,3 @@ async function getSpecificRepositories() {
 }
 
 window.onload = getSpecificRepositories;
-
