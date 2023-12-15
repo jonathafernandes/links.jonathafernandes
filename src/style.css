@@ -234,10 +234,18 @@ footer img {
   justify-content: center;
 }
 
+.powered-by img {
+  width: 30px;
+}
+
 @media (max-width: 995px){
   header, main {
     flex-direction: column;
     align-items: center;
+  }
+
+  header {
+    text-align: center;
   }
 
   footer {
