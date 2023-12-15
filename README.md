@@ -7,7 +7,7 @@
 
 ### 🚀 Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - JavaSript
@@ -15,9 +15,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### 🖱️ Visite
 
-https://jonathafernandes.github.io/links-sociais/
-
----
-👨‍💻 Desenvolvedor
-<br>
-- Jonatha Fernandes
+https://jonatha-fernandes-links.vercel.app/
