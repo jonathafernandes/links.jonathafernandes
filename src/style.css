@@ -87,9 +87,11 @@ p.caption {
 }
 
 #switch {
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 64px;
-    margin: 18px auto;
+    margin: 18px;
 }
 
 #switch button {
