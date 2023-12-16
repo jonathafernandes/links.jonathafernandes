@@ -160,6 +160,10 @@ main {
   border-bottom: 1px solid var(--primary-color-dark);
 }
 
+.social ul li a.last-link {
+  border-bottom: none;
+}
+
 .project-content, .social {
   background: var(--primary-color);
   color: var(--text-color);
