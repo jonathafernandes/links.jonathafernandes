@@ -218,28 +218,10 @@ main {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-
   text-align: center;
   font-weight: 500;
   font-size: 0.75rem;
   color:  #999999;
-}
-
-footer img {
-  width: 40px;
-}
-
-.powered-by {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.powered-by img {
-  width: 30px;
 }
 
 @media (max-width: 995px){
