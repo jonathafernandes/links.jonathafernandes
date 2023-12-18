@@ -15,4 +15,4 @@ Desenvolvido com as seguintes tecnologias:
 
 ### 🖱️ Visite
 
-https://jonatha-fernandes-links.vercel.app/
+https://links.jonathafernandes.vercel.app/
