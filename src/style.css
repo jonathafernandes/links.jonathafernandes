@@ -45,7 +45,6 @@ a {
   margin: 2rem 20vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 header {
@@ -182,7 +181,7 @@ main {
 }
 
 .title-content a {
-  font-size: 0.775rem;
+  font-size: 0.675rem;
   color: var(--text-color-secondary);
 }
 
@@ -217,11 +216,13 @@ main {
   color: #1a1a1a;
 }
 
-footer {
+footer p {
   text-align: center;
   font-weight: 500;
   font-size: 0.75rem;
   color:  #999999;
+
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 995px){
