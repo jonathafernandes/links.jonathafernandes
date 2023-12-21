@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'mixins'
 
 * 
     margin: 0
@@ -19,9 +20,11 @@ body
 
 .container
     display: flex
+    // justify-content: center
+    // align-items: center
     flex-direction: column
-    width: variables.$container-width
-    margin: 0 auto
+    // width: variables.$container-width
+    margin: 2rem 20vw
 
     header
         display: flex
@@ -53,3 +56,70 @@ body
         .caption
             font-size: 1.125rem
             color: variables.$text-color
+    
+    main
+        display: flex
+        gap: 1rem
+        justify-content: space-evenly
+        // margin: 2rem 15vw
+
+        .social ul
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            li a
+                width: 15rem
+                display: flex
+                align-items: center
+                gap: 0.3rem
+                justify-content: center
+                color: variables.$text-color
+                text-transform: uppercase
+                font-size: 0.875em
+
+                padding: 1rem 0
+
+                border-bottom: 1px solid variables.$primary-color-dark
+
+            li .last-link
+                border-bottom: none
+
+        .project-content
+            @include mixins.main
+
+            .title-content
+                display: flex
+                align-items: center
+                justify-content: space-between
+
+                a 
+                    font-size: 0.675rem
+                    color: variables.$secondary-color
+            
+            #repositories-list span
+                font-size: 0.85rem
+
+            .repo-buttons
+                display: flex
+                gap: 2rem
+                margin-top: 2rem
+
+                a
+                    border: 1px solid variables.$secondary-color
+                    background: variables.$primary-color
+                    color: variables.$secondary-color
+
+                    padding: 0.3rem
+
+        
+        .social
+            @include mixins.main
+        
+footer p
+    text-align: center
+    font-weight: 500
+    font-size: 0.75rem
+    color:  #999999
+
+    margin-bottom: 2rem
