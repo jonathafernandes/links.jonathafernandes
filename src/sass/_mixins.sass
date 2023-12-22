@@ -1,0 +1,46 @@
+@use 'variables'
+
+@mixin reset
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Silkscreen', sans-serif
+
+    ul 
+        list-style: none
+    
+    a 
+        text-decoration: none
+        color: variables.$text-color
+
+@mixin flex-container
+    display: flex
+    align-items: center
+    justify-content: center
+    
+@mixin main-content
+    background: variables.$primary-color
+    color: variables.$text-color
+    border-radius: 5px
+
+    margin: 5px 0
+    padding: 1rem
+    width: 100%
+
+@mixin main-hover
+    &:hover
+        opacity: 0.8
+
+@mixin hover-repo-buttons
+    &:hover
+        background: variables.$secondary-color
+        color: variables.$bg-color
+
+@mixin laptop
+    @media(max-width: 995px)
+        @content
+
+@mixin tablet
+    @media(max-width: 710px)
+        @content
+

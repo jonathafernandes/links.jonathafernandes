@@ -1,0 +1,125 @@
+@use 'variables'
+@use 'mixins'
+
+* 
+    @include mixins.reset
+
+body
+    height: 100vh
+    background-color: variables.$bg-color
+
+.container
+    @include mixins.flex-container
+    align-items: initial
+    justify-content: initial
+    flex-direction: column
+    margin: 2rem 20vw
+    @include mixins.tablet
+        margin: 2rem 1rem
+
+    header
+        display: flex
+        gap: 1rem
+        @include mixins.laptop
+            flex-direction: column
+            align-items: center
+            text-align: center
+
+        .avatar
+            width: 100px
+            height: 100px
+            padding: 0px
+
+            border: 2px solid variables.$primary-color
+            border-radius: 5px
+
+        h1 
+            font-size: 1.5rem
+            color: variables.$secondary-color
+
+        ul
+            display: flex
+            gap: 0.7rem
+            flex-wrap: wrap
+            margin-top: 5px
+
+        ul li 
+            border: 1px solid variables.$text-color
+            color: variables.$text-color
+            font-size: 0.75rem
+            padding: 0.3rem
+        
+        .caption
+            font-size: 1.125rem
+            color: variables.$text-color
+    
+    main
+        display: flex
+        gap: 1rem
+        justify-content: space-evenly
+        @include mixins.laptop
+            flex-direction: column
+            align-items: center
+
+        .social ul
+            @include mixins.flex-container
+            flex-direction: column
+            justify-content: initial
+
+            li a
+                width: 15rem
+                @include mixins.flex-container
+                gap: 0.3rem
+                color: variables.$text-color
+                text-transform: uppercase
+                font-size: 0.875em
+
+                padding: 1rem 0
+
+                border-bottom: 1px solid variables.$primary-color-dark
+
+            li .last-link
+                border-bottom: none
+
+        .project-content
+            @include mixins.main-content
+
+            .title-content
+                @include mixins.flex-container
+                justify-content: space-between
+
+                a 
+                    @include mixins.main-hover
+                    font-size: 0.675rem
+                    color: variables.$secondary-color
+            
+            #repositories-list span
+                font-size: 0.85rem
+
+            .repo-buttons
+                display: flex
+                gap: 2rem
+                margin-top: 2rem
+
+                a
+                    border: 1px solid variables.$secondary-color
+                    background: variables.$primary-color
+                    color: variables.$secondary-color
+
+                    padding: 0.3rem
+                    @include mixins.hover-repo-buttons
+
+        .social
+            @include mixins.main-content
+
+            a 
+                @include mixins.main-hover
+
+        
+footer p
+    text-align: center
+    font-weight: 500
+    font-size: 0.75rem
+    color:  #999999
+
+    padding: 2rem
