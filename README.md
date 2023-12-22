@@ -1,9 +1,9 @@
-<h2 align="center">Links</h2>
+<h2>Links</h2>
 
-<p align="center">
+<p>
   Página de agrupamento de links.
-  <br>
 </p>
+<br>
 
 ### 🚀 Tecnologias
 
