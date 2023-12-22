@@ -29,6 +29,7 @@ async function getSpecificRepositories() {
 
         listItem.innerHTML = `
             <h5>${repo.name}</h5>
+            <img src="./src/images/project.png" alt="">
             <br>
             <span>${repo.description}<span>
             <div class="repo-buttons">

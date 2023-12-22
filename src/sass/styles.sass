@@ -61,6 +61,10 @@ body
             flex-direction: column
             align-items: center
 
+        .social
+            @include mixins.main-content
+
+
         .social ul
             @include mixins.flex-container
             flex-direction: column
@@ -77,9 +81,11 @@ body
                 padding: 1rem 0
 
                 border-bottom: 1px solid variables.$primary-color-dark
+                @include mixins.main-hover
 
             li .last-link
-                border-bottom: none
+                @include mixins.laptop
+                    border-bottom: none
 
         .project-content
             @include mixins.main-content
@@ -93,6 +99,13 @@ body
                     font-size: 0.675rem
                     color: variables.$secondary-color
             
+            #repositories-list img
+                width: 100%
+                margin: 0.5rem 0
+
+                border: 1px solid variables.$primary-color
+                border-radius: 2px
+
             #repositories-list span
                 font-size: 0.85rem
 
@@ -108,13 +121,6 @@ body
 
                     padding: 0.3rem
                     @include mixins.hover-repo-buttons
-
-        .social
-            @include mixins.main-content
-
-            a 
-                @include mixins.main-hover
-
         
 footer p
     text-align: center
