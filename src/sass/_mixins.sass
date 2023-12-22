@@ -1,5 +1,5 @@
 @use 'variables'
-    
+
 @mixin reset
     margin: 0
     padding: 0
@@ -32,6 +32,15 @@
         opacity: 0.8
 
 @mixin hover-repo-buttons
-        &:hover
-            background: variables.$secondary-color
-            color: variables.$bg-color
+    &:hover
+        background: variables.$secondary-color
+        color: variables.$bg-color
+
+@mixin laptop
+    @media(max-width: 995px)
+        @content
+
+@mixin tablet
+    @media(max-width: 710px)
+        @content
+

@@ -26,9 +26,21 @@ body {
   flex-direction: column;
   margin: 2rem 20vw;
 }
+@media (max-width: 710px) {
+  .container {
+    margin: 2rem 1rem;
+  }
+}
 .container header {
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 995px) {
+  .container header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 .container header .avatar {
   width: 100px;
@@ -61,6 +73,12 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: space-evenly;
+}
+@media (max-width: 995px) {
+  .container main {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container main .social ul {
   display: flex;
@@ -140,7 +158,7 @@ footer p {
   font-weight: 500;
   font-size: 0.75rem;
   color: #999999;
-  margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
