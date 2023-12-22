@@ -19,6 +19,10 @@ body {
 
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: initial;
+  justify-content: initial;
   flex-direction: column;
   margin: 2rem 20vw;
 }
@@ -41,6 +45,7 @@ body {
   display: flex;
   gap: 0.7rem;
   flex-wrap: wrap;
+  margin-top: 5px;
 }
 .container header ul li {
   border: 1px solid #646a55;
@@ -59,15 +64,17 @@ body {
 }
 .container main .social ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: initial;
 }
 .container main .social ul li a {
   width: 15rem;
   display: flex;
   align-items: center;
-  gap: 0.3rem;
   justify-content: center;
+  gap: 0.3rem;
   color: #646a55;
   text-transform: uppercase;
   font-size: 0.875em;
@@ -88,11 +95,15 @@ body {
 .container main .project-content .title-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
 }
 .container main .project-content .title-content a {
   font-size: 0.675rem;
   color: #514796;
+}
+.container main .project-content .title-content a:hover {
+  opacity: 0.8;
 }
 .container main .project-content #repositories-list span {
   font-size: 0.85rem;
@@ -108,6 +119,10 @@ body {
   color: #514796;
   padding: 0.3rem;
 }
+.container main .project-content .repo-buttons a:hover {
+  background: #514796;
+  color: #e5e5e5;
+}
 .container main .social {
   background: rgba(69, 89, 64, 0.2784313725);
   color: #646a55;
@@ -115,6 +130,9 @@ body {
   margin: 5px 0;
   padding: 1rem;
   width: 100%;
+}
+.container main .social a:hover {
+  opacity: 0.8;
 }
 
 footer p {

@@ -2,28 +2,17 @@
 @use 'mixins'
 
 * 
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-    font-family: 'Silkscreen', sans-serif
-
-    ul 
-        list-style: none
-    
-    a 
-        text-decoration: none
-        color: variables.$text-color
+    @include mixins.reset
 
 body
     height: 100vh
     background-color: variables.$bg-color
 
 .container
-    display: flex
-    // justify-content: center
-    // align-items: center
+    @include mixins.flex-container
+    align-items: initial
+    justify-content: initial
     flex-direction: column
-    // width: variables.$container-width
     margin: 2rem 20vw
 
     header
@@ -46,6 +35,7 @@ body
             display: flex
             gap: 0.7rem
             flex-wrap: wrap
+            margin-top: 5px
 
         ul li 
             border: 1px solid variables.$text-color
@@ -61,19 +51,16 @@ body
         display: flex
         gap: 1rem
         justify-content: space-evenly
-        // margin: 2rem 15vw
 
         .social ul
-            display: flex
+            @include mixins.flex-container
             flex-direction: column
-            align-items: center
+            justify-content: initial
 
             li a
                 width: 15rem
-                display: flex
-                align-items: center
+                @include mixins.flex-container
                 gap: 0.3rem
-                justify-content: center
                 color: variables.$text-color
                 text-transform: uppercase
                 font-size: 0.875em
@@ -86,14 +73,14 @@ body
                 border-bottom: none
 
         .project-content
-            @include mixins.main
+            @include mixins.main-content
 
             .title-content
-                display: flex
-                align-items: center
+                @include mixins.flex-container
                 justify-content: space-between
 
                 a 
+                    @include mixins.main-hover
                     font-size: 0.675rem
                     color: variables.$secondary-color
             
@@ -111,10 +98,14 @@ body
                     color: variables.$secondary-color
 
                     padding: 0.3rem
+                    @include mixins.hover-repo-buttons
 
-        
         .social
-            @include mixins.main
+            @include mixins.main-content
+
+            a 
+                @include mixins.main-hover
+
         
 footer p
     text-align: center
