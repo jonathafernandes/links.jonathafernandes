@@ -1,18 +1,13 @@
-<h2>Links</h2>
-
-<p>
-  Página de agrupamento de links.
-</p>
+**Página de agrupamento de links.**
 <br>
 
-### 🚀 Tecnologias
+---
 
-Desenvolvido com as seguintes tecnologias:
+**🚀 Tecnologias**
 
-- HTML
-- SASS
-- JavaSript
+_Desenvolvido com_ **HTML**, **SASS** _e_ **JavaScript**.
+<br>
 
-### 🖱️ Visite
+**🖱️ Visite**
 
 https://links.jonathafernandes.vercel.app/
