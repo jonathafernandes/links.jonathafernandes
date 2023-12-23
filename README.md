@@ -9,9 +9,9 @@
 
 Desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- HTML
+- SASS
 - JavaSript
-- Git e Github
 
 ### 🖱️ Visite
 
