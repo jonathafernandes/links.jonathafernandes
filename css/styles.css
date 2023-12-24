@@ -136,13 +136,13 @@ body {
 .container main .project-content .title-content a:hover {
   opacity: 0.8;
 }
-.container main .project-content #repositories-list img {
+.container main .project-content #repoContent img {
   width: 100%;
   margin: 0.5rem 0;
   border: 1px solid rgba(58, 65, 66, 0.3294117647);
   border-radius: 2px;
 }
-.container main .project-content #repositories-list span {
+.container main .project-content #repoContent span {
   font-size: 0.85rem;
 }
 .container main .project-content .repo-buttons {

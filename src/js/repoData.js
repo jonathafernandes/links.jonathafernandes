@@ -1,4 +1,4 @@
-const userData = document.getElementById("userData");
+const repoData = document.getElementById("repoData");
 
 async function getSpecificRepositories() {
     try {
@@ -23,9 +23,9 @@ async function getSpecificRepositories() {
         const specificRepositories = ["alaclimabom"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
-        const repositoriesList = document.getElementById('repositories-list');
+        const repoContent = document.getElementById('repoContent');
         filteredRepositories.forEach(repo => {
-        const listItem = document.createElement('li');
+        const listItem = document.createElement('div');
 
         listItem.innerHTML = `
             <h5>${repo.name}</h5>
@@ -37,11 +37,11 @@ async function getSpecificRepositories() {
                 <a href="${repo.html_url}" target="_blank">Ver no GitHub</a>
             </div>
         `;
-        repositoriesList.appendChild(listItem);
+        repoContent.appendChild(listItem);
         });
     } catch (error) {
         console.error('Erro ao obter repositório:', error.message);
-        userData.innerHTML = `<p style="color: red">Erro ao obter repositório!</p>`
+        repoData.innerHTML = `<p style="color: red">Erro ao obter repositório!</p>`
     }
 }
 
