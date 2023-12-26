@@ -21,6 +21,7 @@
 @mixin main-content
     background: variables.$primary-color
     color: variables.$text-color
+    border: 1px solid variables.$primary-color
     border-radius: 5px
 
     margin: 5px 0
@@ -30,6 +31,7 @@
 @mixin main-content-dark
     background: variables.$primary-color-dark
     color: variables.$text-color-dark
+    border: 1px solid variables.$text-color-dark
 
 @mixin main-hover
     &:hover
@@ -42,11 +44,11 @@
 
 @mixin hover-modal-buttons
     &:hover
-        background: #d6d6d6
+        background: #aaaaaa
 
 @mixin hover-modal-buttons-dark
     &:hover
-        background: #222222
+        background: #ececec10
 
 @mixin laptop
     @media(max-width: 995px)

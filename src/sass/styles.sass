@@ -18,7 +18,7 @@ body
     .container
         header
             .avatar
-                border: 2px solid variables.$primary-color-dark
+                border: 2px solid variables.$text-color-dark
             
             h1
                 color: variables.$secondary-color-dark
@@ -53,12 +53,14 @@ body
                     cursor: pointer
 
             .modal
-                background: variables.$bg-color-dark
+                background: variables.$primary-color-dark
                 border: 1px solid variables.$text-color-dark
 
                 &-content
                     p
                         color: variables.$text-color-dark
+                        border-bottom: 1px solid variables.$text-color
+                        
 
                     button
                         color: variables.$text-color-dark
@@ -173,8 +175,8 @@ body
             padding: 0.4rem
             width: 150px
 
-            background: variables.$bg-color
-            border: 1px solid variables.$primary-color-dark
+            background: variables.$primary-color
+            border: 1px solid variables.$primary-color
             border-radius: 3px
 
             &-content
@@ -184,9 +186,12 @@ body
                 gap: 0.6rem
                 
                 p
+                    border-bottom: 1px solid variables.$primary-color
                     color: variables.$primary-color-dark
                     font-size: 0.8rem
                     text-align: left
+
+                    padding-bottom: 0.2rem
 
                 button
                     border: none
@@ -209,11 +214,10 @@ body
         .social
             @include mixins.main-content
 
-
-        .social ul
-            @include mixins.flex-container
-            flex-direction: column
-            justify-content: initial
+            ul
+                @include mixins.flex-container
+                flex-direction: column
+                justify-content: initial
 
             li a
                 width: 15rem
