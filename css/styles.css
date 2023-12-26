@@ -100,6 +100,9 @@ body {
   background: #d3eba1;
   color: #1a1a1a;
 }
+.dark footer p {
+  color: #455940;
+}
 
 .container {
   display: flex;
@@ -315,7 +318,7 @@ footer p {
   font-weight: 500;
   font-size: 0.75rem;
   color: #999999;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
