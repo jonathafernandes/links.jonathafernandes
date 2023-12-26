@@ -27,6 +27,10 @@
     padding: 1rem
     width: 100%
 
+@mixin main-content-dark
+    background: variables.$primary-color-dark
+    color: variables.$text-color-dark
+
 @mixin main-hover
     &:hover
         opacity: 0.8
@@ -35,6 +39,14 @@
     &:hover
         background: variables.$secondary-color
         color: variables.$bg-color
+
+@mixin hover-modal-buttons
+    &:hover
+        background: #d6d6d6
+
+@mixin hover-modal-buttons-dark
+    &:hover
+        background: #222222
 
 @mixin laptop
     @media(max-width: 995px)

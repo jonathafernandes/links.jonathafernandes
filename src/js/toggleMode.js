@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-    function toggleMode() {
+    function toggleModeDark() {
         const html = document.documentElement;
 
-        if (html.classList.contains('dark')) {
-            html.classList.remove('dark');
-            html.classList.add('light');
-        } else {
-            html.classList.remove('light');
-            html.classList.add('dark');
-        }
+        html.classList.remove('light');
+        html.classList.add('dark');
     }
 
-    document.getElementById('switch').addEventListener('click', toggleMode);
+    function toggleModeLight() {
+        const html = document.documentElement;
+
+        html.classList.remove('dark');
+        html.classList.add('light');
+    }
+
+    document.getElementById('switchLight').addEventListener('click', toggleModeDark);
+    document.getElementById('switchDark').addEventListener('click', toggleModeLight);
 });

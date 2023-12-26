@@ -4,9 +4,92 @@
 * 
     @include mixins.reset
 
+:root
+    background-color: variables.$bg-color
+
 body
     height: 100vh
-    background-color: variables.$bg-color
+    overflow: hidden
+    @include mixins.tablet
+        overflow: auto
+
+.dark
+    background-color: variables.$bg-color-dark
+
+    .container
+        header
+            .avatar
+                border: 2px solid variables.$primary-color-dark
+            
+            h1
+                color: variables.$secondary-color-dark
+            
+            ul li 
+                border: 1px solid variables.$text-color-dark
+                color: variables.$text-color-dark
+            
+            .caption
+                color: variables.$text-color-dark
+            
+            .toggle-buttons
+                .settingsButton
+                    border: none
+                    background: transparent
+                    color: variables.$text-color-dark
+                    cursor: pointer
+
+                    position: absolute
+                    top: 0
+                    right: 0
+                    margin: 0.8rem
+
+                    &:hover
+                        @include mixins.main-hover
+            
+                button
+                    padding: 0.1rem
+                    width: 4rem
+
+                    font-size: 1.3rem
+                    cursor: pointer
+
+            .modal
+                background: variables.$bg-color-dark
+                border: 1px solid variables.$text-color-dark
+
+                &-content
+                    p
+                        color: variables.$text-color-dark
+
+                    button
+                        color: variables.$text-color-dark
+                        @include mixins.hover-modal-buttons-dark
+
+        main
+            .social
+                @include mixins.main-content-dark
+
+            .social ul li a
+                border-bottom: 1px solid variables.$text-color 
+                color: variables.$text-color-dark
+            
+            .project-content
+                @include mixins.main-content-dark
+
+                .title-content a
+                    color: variables.$secondary-color-dark
+                
+                #repoContent img
+                    border: 1px solid variables.$secondary-color-dark
+                
+                .repo-buttons a
+                    border: 1px solid variables.$secondary-color-dark
+                    background: variables.$primary-color-dark
+                    color: variables.$secondary-color-dark
+
+                    &:hover
+                        background: variables.$secondary-color-dark
+                        color: variables.$bg-color-dark
 
 .container
     @include mixins.flex-container
@@ -52,6 +135,61 @@ body
         .caption
             font-size: 1.125rem
             color: variables.$text-color
+
+        .toggle-buttons
+            .settingsButton
+                border: none
+                background: transparent
+                color: variables.$primary-color-dark
+                cursor: pointer
+
+                position: absolute
+                top: 0
+                right: 0
+                margin: 0.8rem
+
+                &:hover
+                    @include mixins.main-hover
+        
+            button
+                padding: 0.1rem
+                width: 4rem
+
+                font-size: 1.3rem
+                cursor: pointer
+
+        .modal
+            display: none
+            position: fixed
+            top: 0
+            right: 0
+            margin: 3rem 2.3rem
+            padding: 0.4rem
+            width: 150px
+
+            background: variables.$bg-color
+            border: 1px solid variables.$primary-color-dark
+            border-radius: 3px
+
+            &-content
+                @include mixins.flex-container
+                flex-direction: column
+                align-items: initial
+                gap: 0.6rem
+                
+                p
+                    color: variables.$primary-color-dark
+                    font-size: 0.8rem
+
+                button
+                    border: none
+                    background: transparent
+                    color: variables.$primary-color-dark
+                    cursor: pointer
+                    text-align: left
+                    @include mixins.hover-modal-buttons
+
+                    padding: 0.2rem
     
     main
         display: flex
@@ -127,5 +265,3 @@ footer p
     font-weight: 500
     font-size: 0.75rem
     color:  #999999
-
-    padding: 2rem

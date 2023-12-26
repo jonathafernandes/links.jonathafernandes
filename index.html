@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="light">
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jonatha Fernandes | Desenvolvedor web</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonatha Fernandes | Desenvolvedor web</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-  <link rel="stylesheet" href="/css/styles.css" />
-</head>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
 
-<body>
-  <div class="container">
-    <header>
-      <img class="avatar" src="https://github.com/jonathafernandes.png" alt="Imagem de perfil de Jonatha" />
-      <div class="header-text">
-        <h1>Jonatha Fernandes</h1>
-        <p class="caption">Desenvolvedor web</p>
-        <ul>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>TypeScript</li>
-          <li>Node.js</li>
-        </ul>
-      </div>
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span></span>
-      </div>
-    </header>
-
-    <main>
-      <div class="project-content">
-        <div class="title-content">
-          <h4>Último projeto</h4>
-          <a href="https://jonathafernandes.vercel.app/#section-3" target="_blank">Veja todos <i class="ph-bold ph-arrow-square-out"></i></a>
+  <body>
+    <div class="container">
+      <header>
+        <img class="avatar" src="https://github.com/jonathafernandes.png" alt="Imagem de perfil de Jonatha" />
+        <div class="header-text">
+          <h1>Jonatha Fernandes</h1>
+          <p class="caption">Desenvolvedor web</p>
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+          </ul>
         </div>
-        <br>
-        <hr>
-        <br>
-        <div id="repoData">
-          <div id="repoContent"></div>
-      </div>
-      </div>
-      <div class="social">
-        <ul>
-          <li>
-            <a href="https://github.com/jonathafernandes" target="_blank">
-              GitHub
-              <i class="ph-fill ph-github-logo"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
-              Linkedin
-              <i class="ph-fill ph-linkedin-logo"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://jonathafernandes.vercel.app/" target="_blank">
-              Portfólio
-              <i class="ph-fill ph-tote"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/_jonathafernandes/" target="_blank">
-              Instagram
-              <i class="ph-fill ph-instagram-logo"></i>
-            </a>
-          </li>
-          <li>
-            <a class="last-link" href="https://twitter.com/_jonatha__" target="_blank">
-              Twitter
-              <i class="ph-fill ph-twitter-logo"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </main>
-  </div>
+        <div class="toggle-buttons">
+          <button id="openModalButton" class="settingsButton" onclick="toggleModal()"><i class="ph ph-gear"></i></button>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <p>Tema</p>
+            <button id="switchLight" onclick="toggleLight()"><i class="ph ph-moon"></i> Escuro</button>
+            <button id="switchDark" onclick="toggleDark()"><i class="ph ph-sun-dim"></i> Claro</button>
+          </div>
+        </div>
+        
+      </header>
 
-  <footer>
-    <p>&copy; 2023 Jonatha Fernandes.</p>
-  </footer>
+      <main>
+        <div class="project-content">
+          <div class="title-content">
+            <h4>Último projeto</h4>
+            <a href="https://jonathafernandes.vercel.app/#section-3" target="_blank">Veja todos <i class="ph-bold ph-arrow-square-out"></i></a>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div id="repoData">
+            <div id="repoContent"></div>
+        </div>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="https://github.com/jonathafernandes" target="_blank">
+                GitHub
+                <i class="ph-fill ph-github-logo"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
+                Linkedin
+                <i class="ph-fill ph-linkedin-logo"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://jonathafernandes.vercel.app/" target="_blank">
+                Portfólio
+                <i class="ph-fill ph-tote"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_jonathafernandes/" target="_blank">
+                Instagram
+                <i class="ph-fill ph-instagram-logo"></i>
+              </a>
+            </li>
+            <li>
+              <a class="last-link" href="https://twitter.com/_jonatha__" target="_blank">
+                Twitter
+                <i class="ph-fill ph-twitter-logo"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
 
-  <script src="./src/js/toggleMode.js"></script>
-  <script src="./src/js/repoData.js"></script>
-</body>
+    <footer>
+      <p>&copy; 2023 Jonatha Fernandes.</p>
+    </footer>
+
+    <script src="./src/js/toggleMode.js"></script>
+    <script src="./src/js/repoData.js"></script>
+    <script src="./src/js/modal.js"></script>
+  </body>
 
 </html>

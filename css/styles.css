@@ -12,9 +12,94 @@
   color: #646a55;
 }
 
+:root {
+  background-color: #e5e5e5;
+}
+
 body {
   height: 100vh;
-  background-color: #e5e5e5;
+  overflow: hidden;
+}
+@media (max-width: 710px) {
+  body {
+    overflow: auto;
+  }
+}
+
+.dark {
+  background-color: #1a1a1a;
+}
+.dark .container header .avatar {
+  border: 2px solid #455940;
+}
+.dark .container header h1 {
+  color: #d3eba1;
+}
+.dark .container header ul li {
+  border: 1px solid #a9b68d;
+  color: #a9b68d;
+}
+.dark .container header .caption {
+  color: #a9b68d;
+}
+.dark .container header .toggle-buttons .settingsButton {
+  border: none;
+  background: transparent;
+  color: #a9b68d;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.8rem;
+}
+.dark .container header .toggle-buttons .settingsButton:hover:hover {
+  opacity: 0.8;
+}
+.dark .container header .toggle-buttons button {
+  padding: 0.1rem;
+  width: 4rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.dark .container header .modal {
+  background: #1a1a1a;
+  border: 1px solid #a9b68d;
+}
+.dark .container header .modal-content p {
+  color: #a9b68d;
+}
+.dark .container header .modal-content button {
+  color: #a9b68d;
+}
+.dark .container header .modal-content button:hover {
+  background: #222222;
+}
+.dark .container main .social {
+  background: #455940;
+  color: #a9b68d;
+}
+.dark .container main .social ul li a {
+  border-bottom: 1px solid #646a55;
+  color: #a9b68d;
+}
+.dark .container main .project-content {
+  background: #455940;
+  color: #a9b68d;
+}
+.dark .container main .project-content .title-content a {
+  color: #d3eba1;
+}
+.dark .container main .project-content #repoContent img {
+  border: 1px solid #d3eba1;
+}
+.dark .container main .project-content .repo-buttons a {
+  border: 1px solid #d3eba1;
+  background: #455940;
+  color: #d3eba1;
+}
+.dark .container main .project-content .repo-buttons a:hover {
+  background: #d3eba1;
+  color: #1a1a1a;
 }
 
 .container {
@@ -69,6 +154,60 @@ body {
   font-size: 1.125rem;
   color: #646a55;
 }
+.container header .toggle-buttons .settingsButton {
+  border: none;
+  background: transparent;
+  color: #455940;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.8rem;
+}
+.container header .toggle-buttons .settingsButton:hover:hover {
+  opacity: 0.8;
+}
+.container header .toggle-buttons button {
+  padding: 0.1rem;
+  width: 4rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.container header .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 3rem 2.3rem;
+  padding: 0.4rem;
+  width: 150px;
+  background: #e5e5e5;
+  border: 1px solid #455940;
+  border-radius: 3px;
+}
+.container header .modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: initial;
+  gap: 0.6rem;
+}
+.container header .modal-content p {
+  color: #455940;
+  font-size: 0.8rem;
+}
+.container header .modal-content button {
+  border: none;
+  background: transparent;
+  color: #455940;
+  cursor: pointer;
+  text-align: left;
+  padding: 0.2rem;
+}
+.container header .modal-content button:hover {
+  background: #d6d6d6;
+}
 .container main {
   display: flex;
   gap: 1rem;
@@ -105,7 +244,7 @@ body {
   text-transform: uppercase;
   font-size: 0.875em;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(58, 65, 66, 0.3294117647);
+  border-bottom: 1px solid #455940;
 }
 .container main .social ul li a:hover {
   opacity: 0.8;
@@ -139,7 +278,7 @@ body {
 .container main .project-content #repoContent img {
   width: 100%;
   margin: 0.5rem 0;
-  border: 1px solid rgba(58, 65, 66, 0.3294117647);
+  border: 1px solid #455940;
   border-radius: 2px;
 }
 .container main .project-content #repoContent span {
@@ -166,7 +305,6 @@ footer p {
   font-weight: 500;
   font-size: 0.75rem;
   color: #999999;
-  padding: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
