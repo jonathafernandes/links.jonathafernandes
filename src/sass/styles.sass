@@ -8,7 +8,6 @@
     background-color: variables.$bg-color
 
 body
-    height: 100vh
     overflow: hidden
     @include mixins.tablet
         overflow: auto
@@ -96,7 +95,7 @@ body
     align-items: initial
     justify-content: initial
     flex-direction: column
-    margin: 2rem 20vw
+    margin: 1.5rem 20vw
     @include mixins.tablet
         margin: 2rem 1rem
 
@@ -147,6 +146,8 @@ body
                 top: 0
                 right: 0
                 margin: 0.8rem
+                @include mixins.tablet
+                    margin: 0.8rem 0 0 0
 
                 &:hover
                     @include mixins.main-hover
@@ -164,6 +165,8 @@ body
             top: 0
             right: 0
             margin: 3rem 2.3rem
+            @include mixins.tablet
+                margin: 3rem 1.6rem
             padding: 0.4rem
             width: 150px
 
@@ -180,6 +183,7 @@ body
                 p
                     color: variables.$primary-color-dark
                     font-size: 0.8rem
+                    text-align: left
 
                 button
                     border: none

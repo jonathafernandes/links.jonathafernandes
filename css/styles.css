@@ -17,7 +17,6 @@
 }
 
 body {
-  height: 100vh;
   overflow: hidden;
 }
 @media (max-width: 710px) {
@@ -109,7 +108,7 @@ body {
   align-items: initial;
   justify-content: initial;
   flex-direction: column;
-  margin: 2rem 20vw;
+  margin: 1.5rem 20vw;
 }
 @media (max-width: 710px) {
   .container {
@@ -164,6 +163,11 @@ body {
   right: 0;
   margin: 0.8rem;
 }
+@media (max-width: 710px) {
+  .container header .toggle-buttons .settingsButton {
+    margin: 0.8rem 0 0 0;
+  }
+}
 .container header .toggle-buttons .settingsButton:hover:hover {
   opacity: 0.8;
 }
@@ -185,6 +189,11 @@ body {
   border: 1px solid #455940;
   border-radius: 3px;
 }
+@media (max-width: 710px) {
+  .container header .modal {
+    margin: 3rem 1.6rem;
+  }
+}
 .container header .modal-content {
   display: flex;
   align-items: center;
@@ -196,6 +205,7 @@ body {
 .container header .modal-content p {
   color: #455940;
   font-size: 0.8rem;
+  text-align: left;
 }
 .container header .modal-content button {
   border: none;
