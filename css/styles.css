@@ -185,13 +185,13 @@ body {
 }
 .container header .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   margin: 3rem 2.3rem;
   padding: 0.4rem;
   width: 150px;
-  background: rgba(69, 89, 64, 0.2784313725);
+  background: #f1f1f1;
   border: 1px solid rgba(69, 89, 64, 0.2784313725);
   border-radius: 3px;
 }
@@ -224,7 +224,7 @@ body {
   padding: 0.2rem;
 }
 .container header .modal-content button:hover {
-  background: #aaaaaa;
+  background: rgba(170, 170, 170, 0.3019607843);
 }
 .container main {
   display: flex;
