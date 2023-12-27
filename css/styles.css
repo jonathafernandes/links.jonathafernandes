@@ -152,11 +152,11 @@ body {
 .container header ul li {
   border: 1px solid #646a55;
   color: #646a55;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   padding: 0.3rem;
 }
 .container header .caption {
-  font-size: 1.125rem;
+  font-size: 0.9rem;
   color: #646a55;
 }
 .container header .toggle-buttons .settingsButton {
