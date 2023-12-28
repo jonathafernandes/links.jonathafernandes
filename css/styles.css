@@ -19,7 +19,7 @@
 body {
   overflow: hidden;
 }
-@media (max-width: 710px) {
+@media (max-width: 786px) {
   body {
     overflow: auto;
   }
@@ -114,18 +114,32 @@ body {
   align-items: initial;
   justify-content: initial;
   flex-direction: column;
-  margin: 1.5rem 20vw;
+  margin: 1.5rem 18vw;
 }
-@media (max-width: 710px) {
+@media (max-width: 995px) {
+  .container {
+    margin: 2rem 10vw;
+  }
+}
+@media (max-width: 786px) {
+  .container {
+    margin: 2rem 8vw;
+  }
+}
+@media (max-width: 425px) {
   .container {
     margin: 2rem 1rem;
   }
 }
 .container header {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  justify-content: initial;
+  align-items: initial;
+  gap: 0.5rem;
 }
-@media (max-width: 995px) {
+@media (max-width: 786px) {
   .container header {
     flex-direction: column;
     align-items: center;
@@ -145,9 +159,17 @@ body {
 }
 .container header ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: initial;
   gap: 0.7rem;
   flex-wrap: wrap;
   margin-top: 5px;
+}
+@media (max-width: 786px) {
+  .container header ul {
+    justify-content: center;
+  }
 }
 .container header ul li {
   border: 1px solid #646a55;
@@ -169,7 +191,7 @@ body {
   right: 0;
   margin: 0.8rem;
 }
-@media (max-width: 710px) {
+@media (max-width: 786px) {
   .container header .toggle-buttons .settingsButton {
     margin: 0.8rem 0 0 0;
   }
@@ -195,7 +217,7 @@ body {
   border: 1px solid rgba(69, 89, 64, 0.2784313725);
   border-radius: 3px;
 }
-@media (max-width: 710px) {
+@media (max-width: 786px) {
   .container header .modal {
     margin: 3rem 1.6rem;
   }
@@ -231,7 +253,7 @@ body {
   gap: 1rem;
   justify-content: space-evenly;
 }
-@media (max-width: 995px) {
+@media (max-width: 786px) {
   .container main {
     flex-direction: column;
     align-items: center;

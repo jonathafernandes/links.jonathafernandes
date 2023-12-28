@@ -100,16 +100,23 @@ body
     align-items: initial
     justify-content: initial
     flex-direction: column
-    margin: 1.5rem 20vw
+    margin: 1.5rem 18vw
+    @include mixins.laptop
+        margin: 2rem 10vw
     @include mixins.tablet
+        margin: 2rem 8vw
+    @include mixins.mobile
         margin: 2rem 1rem
 
     header
-        display: flex
-        gap: 1rem
-        @include mixins.laptop
+        @include mixins.flex-container
+        justify-content: initial
+        align-items: initial
+        gap: 0.5rem
+        @include mixins.tablet
             flex-direction: column
             align-items: center
+
             text-align: center
 
         .avatar
@@ -125,7 +132,10 @@ body
             color: variables.$secondary-color
 
         ul
-            display: flex
+            @include mixins.flex-container
+            justify-content: initial
+            @include mixins.tablet
+                justify-content: center
             gap: 0.7rem
             flex-wrap: wrap
             margin-top: 5px
@@ -207,7 +217,7 @@ body
         display: flex
         gap: 1rem
         justify-content: space-evenly
-        @include mixins.laptop
+        @include mixins.tablet
             flex-direction: column
             align-items: center
 
