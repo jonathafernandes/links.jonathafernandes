@@ -93,6 +93,7 @@ body {
 }
 .dark .container main .project-content #repoContent img {
   border: 1px solid #d3eba1;
+  box-shadow: rgba(211, 235, 161, 0.15) 0px 54px 55px, rgba(211, 235, 161, 0.25) 0px -12px 30px, rgba(211, 235, 161, 0.25) 0px 4px 6px, rgba(211, 235, 161, 0.15) 0px 12px 13px, rgba(211, 235, 161, 0.25) 0px -3px 5px;
 }
 .dark .container main .project-content .repo-buttons a {
   border: 1px solid #d3eba1;
@@ -322,6 +323,7 @@ body {
   margin: 0.5rem 0;
   border: 1px solid #455940;
   border-radius: 2px;
+  box-shadow: rgba(81, 71, 150, 0.15) 0px 54px 55px, rgba(81, 71, 150, 0.25) 0px -12px 30px, rgba(81, 71, 150, 0.25) 0px 4px 6px, rgba(81, 71, 150, 0.15) 0px 12px 13px, rgba(81, 71, 150, 0.25) 0px -3px 5px;
 }
 .container main .project-content #repoContent span {
   font-size: 0.85rem;
