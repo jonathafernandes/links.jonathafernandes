@@ -17,6 +17,14 @@ body
 
     .container
         header
+            .time-and-date
+                #date
+                    color: variables.$text-color-dark
+                
+                #time
+                    color: variables.$secondary-color-dark
+                    text-shadow: rgb(211, 235, 161, 0.15) 0px 54px 55px,rgb(211, 235, 161, 0.25) 0px -12px 30px, rgb(211, 235, 161, 0.25) 0px 4px 6px, rgb(211, 235, 161, 0.15) 0px 12px 13px, rgb(211, 235, 161, 0.25) 0px -3px 5px
+
             .avatar
                 border: 2px solid variables.$text-color-dark
             
@@ -119,6 +127,24 @@ body
             align-items: center
 
             text-align: center
+
+        .time-and-date
+            position: absolute
+            top: 0
+            left: 0
+            margin: 0.5rem
+
+            #date
+                font-size: 0.75rem
+                color: variables.$bg-color-dark
+                @include mixins.laptop
+                    font-size: 0.65rem
+            
+            #time
+                color: variables.$secondary-color
+                text-shadow: rgb(81, 71, 150, 0.15) 0px 54px 55px,rgb(81, 71, 150, 0.25) 0px -12px 30px, rgb(81, 71, 150, 0.25) 0px 4px 6px, rgb(81, 71, 150, 0.15) 0px 12px 13px, rgb(81, 71, 150, 0.25) 0px -3px 5px
+                @include mixins.laptop
+                    font-size: 0.75rem
 
         .avatar
             width: 100px

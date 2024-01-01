@@ -28,6 +28,13 @@ body {
 .dark {
   background-color: #1a1a1a;
 }
+.dark .container header .time-and-date #date {
+  color: #a9b68d;
+}
+.dark .container header .time-and-date #time {
+  color: #d3eba1;
+  text-shadow: rgba(211, 235, 161, 0.15) 0px 54px 55px, rgba(211, 235, 161, 0.25) 0px -12px 30px, rgba(211, 235, 161, 0.25) 0px 4px 6px, rgba(211, 235, 161, 0.15) 0px 12px 13px, rgba(211, 235, 161, 0.25) 0px -3px 5px;
+}
 .dark .container header .avatar {
   border: 2px solid #a9b68d;
 }
@@ -145,6 +152,30 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+}
+.container header .time-and-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.5rem;
+}
+.container header .time-and-date #date {
+  font-size: 0.75rem;
+  color: #1a1a1a;
+}
+@media (max-width: 995px) {
+  .container header .time-and-date #date {
+    font-size: 0.65rem;
+  }
+}
+.container header .time-and-date #time {
+  color: #514796;
+  text-shadow: rgba(81, 71, 150, 0.15) 0px 54px 55px, rgba(81, 71, 150, 0.25) 0px -12px 30px, rgba(81, 71, 150, 0.25) 0px 4px 6px, rgba(81, 71, 150, 0.15) 0px 12px 13px, rgba(81, 71, 150, 0.25) 0px -3px 5px;
+}
+@media (max-width: 995px) {
+  .container header .time-and-date #time {
+    font-size: 0.75rem;
   }
 }
 .container header .avatar {
