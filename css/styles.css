@@ -28,6 +28,9 @@ body {
 .dark {
   background-color: #1a1a1a;
 }
+.dark .container header .dataSpotify span {
+  color: #a9b68d;
+}
 .dark .container header .time-and-date #date {
   color: #a9b68d;
 }
@@ -49,23 +52,10 @@ body {
   color: #a9b68d;
 }
 .dark .container header .toggle-buttons .settingsButton {
-  border: none;
-  background: transparent;
   color: #a9b68d;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0.8rem;
 }
 .dark .container header .toggle-buttons .settingsButton:hover:hover {
   opacity: 0.8;
-}
-.dark .container header .toggle-buttons button {
-  padding: 0.1rem;
-  width: 4rem;
-  font-size: 1.3rem;
-  cursor: pointer;
 }
 .dark .container header .modal {
   background: #455940;
@@ -158,7 +148,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
 .container header .time-and-date #date {
   font-size: 0.75rem;
@@ -176,6 +166,34 @@ body {
 @media (max-width: 995px) {
   .container header .time-and-date #time {
     font-size: 0.75rem;
+  }
+}
+.container header .dataSpotify {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 4rem 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+@media (max-width: 995px) {
+  .container header .dataSpotify {
+    left: 5.5rem;
+    margin-top: 0.5rem;
+  }
+}
+.container header .dataSpotify i {
+  color: #1ed760;
+}
+.container header .dataSpotify span {
+  font-size: 0.65rem;
+  color: #1a1a1a;
+}
+@media (max-width: 995px) {
+  .container header .dataSpotify span {
+    font-size: 0.65rem;
   }
 }
 .container header .avatar {
@@ -221,19 +239,12 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0.8rem;
-}
-@media (max-width: 786px) {
-  .container header .toggle-buttons .settingsButton {
-    margin: 0.8rem 0 0 0;
-  }
+  margin: 0.3rem 0.5rem;
 }
 .container header .toggle-buttons .settingsButton:hover:hover {
   opacity: 0.8;
 }
 .container header .toggle-buttons button {
-  padding: 0.1rem;
-  width: 4rem;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -242,17 +253,12 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 3rem 2.3rem;
+  margin: 2rem 1.8rem;
   padding: 0.4rem;
   width: 150px;
   background: #f1f1f1;
   border: 1px solid rgba(69, 89, 64, 0.2784313725);
   border-radius: 3px;
-}
-@media (max-width: 786px) {
-  .container header .modal {
-    margin: 3rem 1.6rem;
-  }
 }
 .container header .modal-content {
   display: flex;
