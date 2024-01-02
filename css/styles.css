@@ -28,6 +28,9 @@ body {
 .dark {
   background-color: #1a1a1a;
 }
+.dark .container header .dataSpotify span {
+  color: #a9b68d;
+}
 .dark .container header .time-and-date #date {
   color: #a9b68d;
 }
@@ -113,17 +116,17 @@ body {
 }
 @media (max-width: 995px) {
   .container {
-    margin: 2rem 10vw;
+    margin: 3rem 10vw;
   }
 }
 @media (max-width: 786px) {
   .container {
-    margin: 2rem 8vw;
+    margin: 3rem 8vw;
   }
 }
 @media (max-width: 425px) {
   .container {
-    margin: 2rem 1rem;
+    margin: 3rem 1rem;
   }
 }
 .container header {
@@ -163,6 +166,34 @@ body {
 @media (max-width: 995px) {
   .container header .time-and-date #time {
     font-size: 0.75rem;
+  }
+}
+.container header .dataSpotify {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 4rem 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+@media (max-width: 995px) {
+  .container header .dataSpotify {
+    left: 5.5rem;
+    margin-top: 0.5rem;
+  }
+}
+.container header .dataSpotify i {
+  color: #1ed760;
+}
+.container header .dataSpotify span {
+  font-size: 0.65rem;
+  color: #1a1a1a;
+}
+@media (max-width: 995px) {
+  .container header .dataSpotify span {
+    font-size: 0.65rem;
   }
 }
 .container header .avatar {

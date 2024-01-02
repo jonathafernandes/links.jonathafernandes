@@ -17,6 +17,10 @@ body
 
     .container
         header
+            .dataSpotify
+                span
+                    color: variables.$text-color-dark
+
             .time-and-date
                 #date
                     color: variables.$text-color-dark
@@ -95,11 +99,11 @@ body
     flex-direction: column
     margin: 1.5rem 18vw
     @include mixins.laptop
-        margin: 2rem 10vw
+        margin: 3rem 10vw
     @include mixins.tablet
-        margin: 2rem 8vw
+        margin: 3rem 8vw
     @include mixins.mobile
-        margin: 2rem 1rem
+        margin: 3rem 1rem
 
     header
         @include mixins.flex-container
@@ -129,6 +133,27 @@ body
                 text-shadow: rgb(81, 71, 150, 0.15) 0px 54px 55px,rgb(81, 71, 150, 0.25) 0px -12px 30px, rgb(81, 71, 150, 0.25) 0px 4px 6px, rgb(81, 71, 150, 0.15) 0px 12px 13px, rgb(81, 71, 150, 0.25) 0px -3px 5px
                 @include mixins.laptop
                     font-size: 0.75rem
+
+        .dataSpotify
+            position: absolute
+            top: 0
+            left: 0
+            margin: 4rem 0.3rem
+            @include mixins.flex-container
+            gap: 0.3rem
+            @include mixins.laptop
+                left: 5.5rem
+                margin-top: 0.5rem
+
+
+            i
+                color: #1ed760
+
+            span
+                font-size: 0.65rem
+                color: variables.$bg-color-dark
+                @include mixins.laptop
+                    font-size: 0.65rem
 
         .avatar
             width: 100px
