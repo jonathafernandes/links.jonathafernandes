@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 const repoData = document.getElementById("repoData");
 
 async function getSpecificRepositories() {
@@ -12,11 +10,11 @@ async function getSpecificRepositories() {
             const response = await axios.get(url);
             allRepositories = allRepositories.concat(response.data);
 
-            const nextLink = response.headers.link && response.headers.link.split(',').find(link => link.includes('rel="next"'));
-            if (nextLink) {
-                const nextUrl = nextLink.split(';')[0].slice(1, -1);
-                await fetchData(nextUrl);
-            }
+        const nextLink = response.headers.link && response.headers.link.split(',').find(link => link.includes('rel="next"'));
+        if (nextLink) {
+            const nextUrl = nextLink.split(';')[0].slice(1, -1);
+            await fetchData(nextUrl);
+        }
         };
 
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
@@ -27,19 +25,19 @@ async function getSpecificRepositories() {
 
         const repoContent = document.getElementById('repoContent');
         filteredRepositories.forEach(repo => {
-            const listItem = document.createElement('div');
+        const listItem = document.createElement('div');
 
-            listItem.innerHTML = `
-                <h5>${repo.name}</h5>
-                <img src="./src/assets/project.png" alt="">
-                <br>
-                <span>${repo.description}<span>
-                <div class="repo-buttons">
-                    <a href="${repo.homepage}" target="_blank">Visite</a>
-                    <a href="${repo.html_url}" target="_blank">Ver no GitHub</a>
-                </div>
-            `;
-            repoContent.appendChild(listItem);
+        listItem.innerHTML = `
+            <h5>${repo.name}</h5>
+            <img src="./src/assets/project.png" alt="">
+            <br>
+            <span>${repo.description}<span>
+            <div class="repo-buttons">
+                <a href="${repo.homepage}" target="_blank">Visite</a>
+                <a href="${repo.html_url}" target="_blank">Ver no GitHub</a>
+            </div>
+        `;
+        repoContent.appendChild(listItem);
         });
     } catch (error) {
         console.error('Erro ao obter repositório:', error.message);
