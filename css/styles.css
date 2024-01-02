@@ -28,9 +28,6 @@ body {
 .dark {
   background-color: #1a1a1a;
 }
-.dark .container header .dataSpotify span {
-  color: #a9b68d;
-}
 .dark .container header .time-and-date #date {
   color: #a9b68d;
 }
@@ -148,7 +145,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0.3rem;
+  margin: 0.5rem;
 }
 .container header .time-and-date #date {
   font-size: 0.75rem;
@@ -166,34 +163,6 @@ body {
 @media (max-width: 995px) {
   .container header .time-and-date #time {
     font-size: 0.75rem;
-  }
-}
-.container header .dataSpotify {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 4rem 0.3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
-}
-@media (max-width: 995px) {
-  .container header .dataSpotify {
-    left: 5.5rem;
-    margin-top: 0.5rem;
-  }
-}
-.container header .dataSpotify i {
-  color: #1ed760;
-}
-.container header .dataSpotify span {
-  font-size: 0.65rem;
-  color: #1a1a1a;
-}
-@media (max-width: 995px) {
-  .container header .dataSpotify span {
-    font-size: 0.65rem;
   }
 }
 .container header .avatar {
@@ -239,7 +208,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0.3rem 0.5rem;
+  margin: 0.5rem 0.5rem 0 0;
 }
 .container header .toggle-buttons .settingsButton:hover:hover {
   opacity: 0.8;
@@ -295,6 +264,7 @@ body {
   .container main {
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
 }
 .container main .social {
@@ -328,7 +298,7 @@ body {
 .container main .social li a:hover {
   opacity: 0.8;
 }
-@media (max-width: 995px) {
+@media (max-width: 786px) {
   .container main .social li .last-link {
     border-bottom: none;
   }

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
@@ -34,10 +35,6 @@
         <div class="time-and-date">
           <p id="date"></p>
           <p id="time"></p>
-        </div>
-        <div class="dataSpotify">
-          <i class="ph-fill ph-spotify-logo"></i>
-          <span>Nada tocando agora...</span>
         </div>
         <div class="toggle-buttons">
           <button id="openModalButton" class="settingsButton" onclick="toggleModal()"><i class="ph-bold ph-gear"></i></i></button>
@@ -105,11 +102,10 @@
       <p>&copy; 2023 Jonatha Fernandes.</p>
     </footer>
 
-    <script src="/src/js/toggleMode.js" type="module"></script>
-    <script src="/src/js/repoData.js" type="module"></script>
-    <script src="/src/js/modal.js" type="module"></script>
-    <script src="./src/js/timeAndDate.js" type="module"></script>
-    <!-- <script src="/src/js/spotifyData.js" type="module"></script> -->
+    <script src="./src/js/toggleMode.js"></script>
+    <script src="./src/js/repoData.js"></script>
+    <script src="./src/js/modal.js"></script>
+    <script src="./src/js/timeAndDate.js"></script>
   </body>
 
 </html>
