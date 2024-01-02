@@ -40,25 +40,9 @@ body
             
             .toggle-buttons
                 .settingsButton
-                    border: none
-                    background: transparent
                     color: variables.$text-color-dark
-                    cursor: pointer
-
-                    position: absolute
-                    top: 0
-                    right: 0
-                    margin: 0.8rem
-
                     &:hover
                         @include mixins.main-hover
-            
-                button
-                    padding: 0.1rem
-                    width: 4rem
-
-                    font-size: 1.3rem
-                    cursor: pointer
 
             .modal
                 background: variables.$primary-color-dark
@@ -187,17 +171,12 @@ body
                 position: absolute
                 top: 0
                 right: 0
-                margin: 0.8rem
-                @include mixins.tablet
-                    margin: 0.8rem 0 0 0
+                margin: 0.5rem 0.5rem 0 0
 
                 &:hover
                     @include mixins.main-hover
         
             button
-                padding: 0.1rem
-                width: 4rem
-
                 font-size: 1.3rem
                 cursor: pointer
 
@@ -206,9 +185,7 @@ body
             position: absolute
             top: 0
             right: 0
-            margin: 3rem 2.3rem
-            @include mixins.tablet
-                margin: 3rem 1.6rem
+            margin: 2rem 1.8rem
             padding: 0.4rem
             width: 150px
 
@@ -247,6 +224,7 @@ body
         @include mixins.tablet
             flex-direction: column
             align-items: center
+            gap: 0
 
         .social
             @include mixins.main-content
@@ -270,7 +248,7 @@ body
                 @include mixins.main-hover
 
             li .last-link
-                @include mixins.laptop
+                @include mixins.tablet
                     border-bottom: none
 
         .project-content

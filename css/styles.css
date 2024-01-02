@@ -49,23 +49,10 @@ body {
   color: #a9b68d;
 }
 .dark .container header .toggle-buttons .settingsButton {
-  border: none;
-  background: transparent;
   color: #a9b68d;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0.8rem;
 }
 .dark .container header .toggle-buttons .settingsButton:hover:hover {
   opacity: 0.8;
-}
-.dark .container header .toggle-buttons button {
-  padding: 0.1rem;
-  width: 4rem;
-  font-size: 1.3rem;
-  cursor: pointer;
 }
 .dark .container header .modal {
   background: #455940;
@@ -221,19 +208,12 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0.8rem;
-}
-@media (max-width: 786px) {
-  .container header .toggle-buttons .settingsButton {
-    margin: 0.8rem 0 0 0;
-  }
+  margin: 0.5rem 0.5rem 0 0;
 }
 .container header .toggle-buttons .settingsButton:hover:hover {
   opacity: 0.8;
 }
 .container header .toggle-buttons button {
-  padding: 0.1rem;
-  width: 4rem;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -242,17 +222,12 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 3rem 2.3rem;
+  margin: 2rem 1.8rem;
   padding: 0.4rem;
   width: 150px;
   background: #f1f1f1;
   border: 1px solid rgba(69, 89, 64, 0.2784313725);
   border-radius: 3px;
-}
-@media (max-width: 786px) {
-  .container header .modal {
-    margin: 3rem 1.6rem;
-  }
 }
 .container header .modal-content {
   display: flex;
@@ -289,6 +264,7 @@ body {
   .container main {
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
 }
 .container main .social {
@@ -322,7 +298,7 @@ body {
 .container main .social li a:hover {
   opacity: 0.8;
 }
-@media (max-width: 995px) {
+@media (max-width: 786px) {
   .container main .social li .last-link {
     border-bottom: none;
   }
