@@ -15,7 +15,7 @@ function updateDateTime() {
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
-    const formattedDate = month + '/' + day + '/' + year;
+    const formattedDate = day + '/' + month + '/' + year;
     const formattedTime = hours + ':' + minutes + ':' + seconds;
 
     const date = document.getElementById('date');
