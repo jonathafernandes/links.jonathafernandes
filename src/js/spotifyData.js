@@ -4,8 +4,8 @@ import axios from 'axios';
 // const axios = require('axios');
 
 // Credenciais da Aplicação Spotify
-const clientId = 'SEU_CLIENT_ID';
-const clientSecret = 'SEU_CLIENT_SECRET';
+const clientId = 'ab2762b769664f73be2d55ffc35995d3';
+const clientSecret = 'fdd64f7414f645b7ba92fb41e69cb458';
 const redirectUri = 'SEU_URI_DE_REDIRECIONAMENTO';
 
 // Endpoint de autenticação

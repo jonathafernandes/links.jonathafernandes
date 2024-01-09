@@ -1,6 +1,6 @@
 let isModalOpen = false;
 
-function toggleModal() {
+export function toggleModal() {
     var modal = document.getElementById("myModal");
     isModalOpen = !isModalOpen;
 
