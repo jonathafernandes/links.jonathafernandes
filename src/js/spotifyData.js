@@ -1,5 +1,7 @@
+import axios from 'axios';
+
 // Exemplo usando a biblioteca axios para fazer requisições HTTP
-const axios = require('axios');
+// const axios = require('axios');
 
 // Credenciais da Aplicação Spotify
 const clientId = 'SEU_CLIENT_ID';

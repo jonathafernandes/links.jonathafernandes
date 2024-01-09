@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 const repoData = document.getElementById("repoData");
 
 async function getSpecificRepositories() {
@@ -29,7 +31,7 @@ async function getSpecificRepositories() {
 
         listItem.innerHTML = `
             <h5>${repo.name}</h5>
-            <img src="./src/assets/project.png" alt="">
+            <img src="./public/project.png" alt="">
             <br>
             <span>${repo.description}<span>
             <div class="repo-buttons">
