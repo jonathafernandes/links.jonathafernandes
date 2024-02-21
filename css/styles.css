@@ -16,9 +16,6 @@
   background-color: #e5e5e5;
 }
 
-body {
-  overflow: hidden;
-}
 @media (max-width: 786px) {
   body {
     overflow: auto;
