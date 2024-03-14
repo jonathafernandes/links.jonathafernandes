@@ -22,7 +22,7 @@ async function getSpecificRepositories() {
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
         await fetchData(initialUrl);
 
-        const specificRepositories = ["alaclimabom"];
+        const specificRepositories = ["organo"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
         const repoContent = document.getElementById('repoContent');
@@ -31,7 +31,7 @@ async function getSpecificRepositories() {
 
         listItem.innerHTML = `
             <h5>${repo.name}</h5>
-            <img src="./public/project.png" alt="">
+            <img src="./src/assets/${specificRepositories}.png" alt="">
             <br>
             <span>${repo.description}<span>
             <div class="repo-buttons">
