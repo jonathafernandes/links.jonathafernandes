@@ -38,7 +38,7 @@ async function getSpecificRepositories() {
         const lastPost = document.getElementById('lastPost');
         const lastPostData = filteredRepositories[0];
         lastPost.innerHTML = `
-            <a href="${lastPostData.html_url}" target="_blank">${lastPostData.description}</a>
+            <a href="${lastPostData.homepage}" target="_blank">${lastPostData.description}</a>
         `;
 
     } catch (error) {
