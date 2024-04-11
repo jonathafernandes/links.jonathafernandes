@@ -78,7 +78,7 @@
 .dark .container main .project-content .title-content a, .dark .container main .bottom .title-content a {
   color: #d3eba1;
 }
-.dark .container main .project-content #repoContent img, .dark .container main .bottom #repoContent img {
+.dark .container main .project-content #lastProject img, .dark .container main .bottom #lastProject img {
   border: 1px solid #d3eba1;
   box-shadow: rgba(211, 235, 161, 0.15) 0px 54px 55px, rgba(211, 235, 161, 0.25) 0px -12px 30px, rgba(211, 235, 161, 0.25) 0px 4px 6px, rgba(211, 235, 161, 0.15) 0px 12px 13px, rgba(211, 235, 161, 0.25) 0px -3px 5px;
 }
@@ -91,11 +91,8 @@
   background: #d3eba1;
   color: #1a1a1a;
 }
-.dark .container main .social ul li a, .dark .container main .bottom ul li a {
+.dark .container main .social ul li a, .dark .container main .bottom a {
   color: #a9b68d;
-}
-.dark .container main .social ul li a {
-  border-bottom: 1px solid #646a55;
 }
 .dark footer p {
   color: #455940;
@@ -304,14 +301,14 @@
 .container main .project-content .title-content a:hover, .container main .bottom .title-content a:hover {
   opacity: 0.8;
 }
-.container main .project-content #repoContent img, .container main .bottom #repoContent img {
+.container main .project-content #lastProject img, .container main .bottom #lastProject img {
   width: 100%;
   margin: 0.5rem 0;
   border: 1px solid #455940;
   border-radius: 2px;
   box-shadow: rgba(81, 71, 150, 0.15) 0px 54px 55px, rgba(81, 71, 150, 0.25) 0px -12px 30px, rgba(81, 71, 150, 0.25) 0px 4px 6px, rgba(81, 71, 150, 0.15) 0px 12px 13px, rgba(81, 71, 150, 0.25) 0px -3px 5px;
 }
-.container main .project-content #repoContent span, .container main .bottom #repoContent span {
+.container main .project-content #lastProject span, .container main .bottom #lastProject span {
   font-size: 0.85rem;
 }
 .container main .project-content .repo-buttons, .container main .bottom .repo-buttons {
@@ -329,7 +326,7 @@
   background: #514796;
   color: #e5e5e5;
 }
-.container main .social ul, .container main .bottom ul {
+.container main .social ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,25 +342,18 @@
   color: #646a55;
   font-size: 0.875em;
   padding: 1rem 0;
-  border-bottom: 1px solid #455940;
+  border-bottom: 1px solid #646a55;
 }
 .container main .social ul li a:hover {
   opacity: 0.8;
 }
 @media (max-width: 786px) {
-  .container main .social ul li .last-link {
+  .container main .social ul .last-link {
     border-bottom: none;
   }
 }
-.container main .bottom ul {
-  align-items: initial;
-  gap: 1rem;
-}
-.container main .bottom li:hover {
+.container main .bottom a:hover {
   opacity: 0.8;
-}
-.container main .bottom li span {
-  font-size: 0.75rem;
 }
 
 footer p {

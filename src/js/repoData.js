@@ -1,5 +1,3 @@
-const repoData = document.getElementById("repoData");
-
 async function getSpecificRepositories() {
     try {
         const username = 'jonathafernandes';
@@ -20,28 +18,33 @@ async function getSpecificRepositories() {
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
         await fetchData(initialUrl);
 
-        const specificRepositories = ["organo"];
+        const specificRepositories = ["organo","blog.github.io"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
-        const repoContent = document.getElementById('repoContent');
-        filteredRepositories.forEach(repo => {
-        const listItem = document.createElement('div');
+        const lastProject = document.getElementById('lastProject');
+        const lastProjectData = filteredRepositories[1];
 
-        listItem.innerHTML = `
-            <h5>${repo.name}</h5>
-            <img src="./src/assets/${specificRepositories}.png" alt="">
+        lastProject.innerHTML = `
+            <h5>${lastProjectData.name}</h5>
+            <img src="./src/assets/${specificRepositories[0]}.png" alt="">
             <br>
-            <span>${repo.description}<span>
+            <span>${lastProjectData.description}<span>
             <div class="repo-buttons">
-                <a href="${repo.homepage}" target="_blank">Visite</a>
-                <a href="${repo.html_url}" target="_blank">Ver no GitHub</a>
+                <a href="${lastProjectData.homepage}" target="_blank">Visite</a>
+                <a href="${lastProjectData.html_url}" target="_blank">Ver no GitHub</a>
             </div>
         `;
-        repoContent.appendChild(listItem);
-        });
+
+        const lastPost = document.getElementById('lastPost');
+        const lastPostData = filteredRepositories[0];
+        lastPost.innerHTML = `
+            <a href="${lastPostData.html_url}" target="_blank">${lastPostData.description}</a>
+        `;
+
     } catch (error) {
         console.error('Erro ao obter repositório:', error.message);
-        repoData.innerHTML = `<p style="color: red">Erro ao obter repositório!</p>`
+        lastProject.innerHTML = `<p style="color: red">Erro ao obter repositório!</p>`
+        lastPost.innerHTML = `<p style="color: red">Erro ao obter informações do post!</p>`
     }
 }
 
