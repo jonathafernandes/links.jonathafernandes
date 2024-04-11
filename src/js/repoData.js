@@ -35,10 +35,10 @@ async function getSpecificRepositories() {
             </div>
         `;
 
-        const lastPost = document.getElementById('lastPost');
-        const lastPostData = filteredRepositories[0];
-        lastPost.innerHTML = `
-            <a href="${lastPostData.homepage}" target="_blank">${lastPostData.description}</a>
+        const articleContent = document.getElementById('article-content');
+        const articleData = filteredRepositories[0];
+        articleContent.innerHTML = `
+            <a href="${articleData.homepage}" target="_blank">${articleData.description}</a>
         `;
 
     } catch (error) {
