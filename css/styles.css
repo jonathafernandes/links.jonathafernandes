@@ -277,6 +277,7 @@
   width: 100%;
 }
 .container main .center {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
