@@ -18,7 +18,7 @@ async function getSpecificRepositories() {
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
         await fetchData(initialUrl);
 
-        const specificRepositories = ["organo","blog.github.io"];
+        const specificRepositories = ["monteiro-esportes-cms","blog.github.io"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
         const lastProject = document.getElementById('lastProject');
@@ -30,8 +30,8 @@ async function getSpecificRepositories() {
             <br>
             <span>${lastProjectData.description}<span>
             <div class="repo-buttons">
+                <a href="${lastProjectData.html_url}" target="_blank">Mais informações</a>
                 <a href="${lastProjectData.homepage}" target="_blank">Visite</a>
-                <a href="${lastProjectData.html_url}" target="_blank">Ver no GitHub</a>
             </div>
         `;
 
