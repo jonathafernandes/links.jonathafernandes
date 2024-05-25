@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 import axios from 'axios';
 
 const repoData = document.getElementById("repoData");
 
+=======
+>>>>>>> main
 async function getSpecificRepositories() {
     try {
         const username = 'jonathafernandes';
@@ -22,28 +25,33 @@ async function getSpecificRepositories() {
         const initialUrl = `https://api.github.com/users/${username}/repos?per_page=${perPage}`;
         await fetchData(initialUrl);
 
-        const specificRepositories = ["organo"];
+        const specificRepositories = ["monteiro-esportes-cms","blog.github.io"];
         const filteredRepositories = allRepositories.filter(repo => specificRepositories.includes(repo.name));
 
-        const repoContent = document.getElementById('repoContent');
-        filteredRepositories.forEach(repo => {
-        const listItem = document.createElement('div');
+        const lastProject = document.getElementById('lastProject');
+        const lastProjectData = filteredRepositories[1];
 
-        listItem.innerHTML = `
-            <h5>${repo.name}</h5>
-            <img src="./src/assets/${specificRepositories}.png" alt="">
+        lastProject.innerHTML = `
+            <h5>${lastProjectData.name}</h5>
+            <img src="./src/assets/${specificRepositories[0]}.png" alt="">
             <br>
-            <span>${repo.description}<span>
+            <span>${lastProjectData.description}<span>
             <div class="repo-buttons">
-                <a href="${repo.homepage}" target="_blank">Visite</a>
-                <a href="${repo.html_url}" target="_blank">Ver no GitHub</a>
+                <a href="${lastProjectData.html_url}" target="_blank">Mais informações</a>
+                <a href="${lastProjectData.homepage}" target="_blank">Visite</a>
             </div>
         `;
-        repoContent.appendChild(listItem);
-        });
+
+        const articleContent = document.getElementById('article-content');
+        const articleData = filteredRepositories[0];
+        articleContent.innerHTML = `
+            <a href="${articleData.homepage}" target="_blank">${articleData.description}</a>
+        `;
+
     } catch (error) {
         console.error('Erro ao obter repositório:', error.message);
-        repoData.innerHTML = `<p style="color: red">Erro ao obter repositório!</p>`
+        lastProject.innerHTML = `<p style="color: red">Erro ao obter repositório!</p>`
+        lastPost.innerHTML = `<p style="color: red">Erro ao obter informações do post!</p>`
     }
 }
 

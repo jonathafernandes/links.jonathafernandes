@@ -6,8 +6,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonatha Fernandes | Desenvolvedor web</title>
+    <title>Links | Jonatha Fernandes</title>
 
+    <link rel="icon" type="image/png" href="./src/assets/logo-favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" />
@@ -22,12 +23,13 @@
         <img class="avatar" src="https://github.com/jonathafernandes.png" alt="Imagem de perfil de Jonatha" />
         <div class="header-text">
           <h1>Jonatha Fernandes</h1>
-          <p class="caption">Desenvolvedor web @ Polícia Civil de Alagoas</p>
+          <p class="caption">Desenvolvedor Web @ Polícia Civil de Alagoas</p>
           <ul>
-            <li>SASS</li>
-            <li>JavaScript</li>
             <li>React</li>
+            <li>JavaScript</li>
             <li>TypeScript</li>
+            <li>TailwindCSS</li>
+            <li>SASS</li>
             <li>Node.js</li>
           </ul>
         </div>
@@ -58,56 +60,85 @@
       </header>
 
       <main>
-        <div class="project-content">
+        <div class="top">
+          <h4>📋 Sobre mim</h4>
+          <br>
+          <hr>
+          <br>
+          <p>
+            Eu sou Jonatha Fernandes, tenho 29 anos e sou apaixonado por tecnologia. Meu primeiro contato com programação foi em 2018 na faculdade, onde aprendi Python, Java e SQL. Atualmente, estou focado em estudar JavaScript com React, Node.js e TypeScript. Estou em minha primeira experiência profissional em desenvolvimento web, enfrentando desafios e buscando aperfeiçoamento pessoal.
+          </p>
+        </div>
+        <div class="center">
+          <div class="project-content">
+            <div class="title-content">
+              <h4>📂 Último projeto</h4>
+              <a href="https://jonathafernandes.vercel.app/#section-3" target="_blank">Veja todos <i class="ph-bold ph-arrow-square-out"></i></a>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="lastProject"></div>
+          </div>
+          <div class="social">
+            <h4>🔗 Links</h4>
+            <br>
+            <hr>
+            <br>
+            <ul>
+              <li>
+                <a href="https://github.com/jonathafernandes" target="_blank">
+                  GitHub
+                  <i class="ph-fill ph-github-logo"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
+                  Linkedin
+                  <i class="ph-fill ph-linkedin-logo"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://jonathafernandes.vercel.app/" target="_blank">
+                  Portfólio
+                  <i class="ph-fill ph-tote"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://jonathafernandes.github.io/blog.github.io/" target="_blank">
+                  Blog
+                  <i class="ph-fill ph-pencil-circle"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/_jonathafernandes/" target="_blank">
+                  Instagram
+                  <i class="ph-fill ph-instagram-logo"></i>
+                </a>
+              </li>
+              <li>
+                <a class="last-link" href="https://twitter.com/_jonatha__" target="_blank">
+                  Twitter
+                  <i class="ph-fill ph-x-logo"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
           <div class="title-content">
-            <h4>Último projeto</h4>
-            <a href="https://jonathafernandes.vercel.app/#section-3" target="_blank">Veja todos <i class="ph-bold ph-arrow-square-out"></i></a>
+            <h4>📰 Último artigo</h4>
+            <a href="https://jonathafernandes.github.io/blog.github.io/Posts/" target="_blank">Veja todos <i class="ph-bold ph-arrow-square-out"></i></a>
           </div>
           <br>
           <hr>
           <br>
-          <div id="repoData">
-            <div id="repoContent"></div>
-        </div>
-        </div>
-        <div class="social">
-          <ul>
-            <li>
-              <a href="https://github.com/jonathafernandes" target="_blank">
-                GitHub
-                <i class="ph-fill ph-github-logo"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank">
-                Linkedin
-                <i class="ph-fill ph-linkedin-logo"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://jonathafernandes.vercel.app/" target="_blank">
-                Portfólio
-                <i class="ph-fill ph-tote"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/_jonathafernandes/" target="_blank">
-                Instagram
-                <i class="ph-fill ph-instagram-logo"></i>
-              </a>
-            </li>
-            <li>
-              <a class="last-link" href="https://twitter.com/_jonatha__" target="_blank">
-                Twitter
-                <i class="ph-fill ph-twitter-logo"></i>
-              </a>
-            </li>
-          </ul>
+          <div id="article-content"></div>
         </div>
       </main>
     </div>
 
     <footer>
-      <p>&copy; 2023 Jonatha Fernandes.</p>
+      <p>&copy; 2024 Jonatha Fernandes.</p>
     </footer>
 
     <script src="./src/js/toggleMode.js" type="module"></script>

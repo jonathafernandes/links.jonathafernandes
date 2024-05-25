@@ -8,6 +8,8 @@
     background-color: variables.$bg-color
 
 body
+    max-width: 97rem
+    margin: 0 auto
     @include mixins.tablet
         overflow: auto
 
@@ -62,20 +64,16 @@ body
                         @include mixins.hover-modal-buttons-dark
 
         main
-            .social
+            .top, .bottom, .project-content, .social
                 @include mixins.main-content-dark
 
-            .social ul li a
-                border-bottom: 1px solid variables.$text-color 
-                color: variables.$text-color-dark
-            
-            .project-content
+            .project-content, .bottom
                 @include mixins.main-content-dark
 
                 .title-content a
                     color: variables.$secondary-color-dark
                 
-                #repoContent img
+                #lastProject img
                     border: 1px solid variables.$secondary-color-dark
                     box-shadow: rgb(211, 235, 161, 0.15) 0px 54px 55px,rgb(211, 235, 161, 0.25) 0px -12px 30px, rgb(211, 235, 161, 0.25) 0px 4px 6px, rgb(211, 235, 161, 0.15) 0px 12px 13px, rgb(211, 235, 161, 0.25) 0px -3px 5px
                 
@@ -87,6 +85,9 @@ body
                     &:hover
                         background: variables.$secondary-color-dark
                         color: variables.$bg-color-dark
+
+            .social ul li a, .bottom a
+                color: variables.$text-color-dark    
     
     footer p
         color: variables.$primary-color-dark
@@ -109,6 +110,7 @@ body
         justify-content: initial
         align-items: initial
         gap: 0.5rem
+        margin-bottom: 0.5rem
         @include mixins.tablet
             flex-direction: column
             align-items: center
@@ -242,42 +244,27 @@ body
                     padding: 0.2rem
     
     main
-        display: flex
-        gap: 1rem
-        justify-content: space-evenly
+        @include mixins.flex-container
+        flex-direction: column
         @include mixins.tablet
-            flex-direction: column
             align-items: center
             gap: 0
 
-        .social
+        p
+            font-size: 0.875rem
+
+        .top, .bottom, .project-content, .social
             @include mixins.main-content
 
-            ul
-                @include mixins.flex-container
+        .center
+            width: 100%
+            @include mixins.flex-container
+            align-items: initial
+            gap: 1rem
+            @include mixins.tablet
                 flex-direction: column
-                justify-content: initial
 
-            li a
-                width: 15rem
-                @include mixins.flex-container
-                gap: 0.3rem
-                color: variables.$text-color
-                text-transform: uppercase
-                font-size: 0.875em
-
-                padding: 1rem 0
-
-                border-bottom: 1px solid variables.$primary-color-dark
-                @include mixins.main-hover
-
-            li .last-link
-                @include mixins.tablet
-                    border-bottom: none
-
-        .project-content
-            @include mixins.main-content
-
+        .project-content, .bottom
             .title-content
                 @include mixins.flex-container
                 justify-content: space-between
@@ -287,7 +274,7 @@ body
                     font-size: 0.675rem
                     color: variables.$secondary-color
             
-            #repoContent img
+            #lastProject img
                 width: 100%
                 margin: 0.5rem 0
 
@@ -295,7 +282,7 @@ body
                 border-radius: 2px
                 box-shadow: rgb(81, 71, 150, 0.15) 0px 54px 55px,rgb(81, 71, 150, 0.25) 0px -12px 30px, rgb(81, 71, 150, 0.25) 0px 4px 6px, rgb(81, 71, 150, 0.15) 0px 12px 13px, rgb(81, 71, 150, 0.25) 0px -3px 5px
 
-            #repoContent span
+            #lastProject span
                 font-size: 0.85rem
 
             .repo-buttons
@@ -310,7 +297,33 @@ body
 
                     padding: 0.3rem
                     @include mixins.hover-repo-buttons
+
+        .social
+            ul
+                @include mixins.flex-container
+                flex-direction: column
+                justify-content: initial
+
+                li a
+                    width: 15rem
+                    @include mixins.flex-container
+                    gap: 0.3rem
+                    color: variables.$text-color
+                    font-size: 0.875em
+
+                    padding: 1rem 0
+
+                    border-bottom: 1px solid variables.$text-color
+                    @include mixins.main-hover
+
+                .last-link
+                    @include mixins.tablet
+                        border-bottom: none
         
+        .bottom
+            a
+                @include mixins.main-hover
+
 footer p
     text-align: center
     font-weight: 500
