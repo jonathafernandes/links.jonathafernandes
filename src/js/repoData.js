@@ -45,13 +45,13 @@ function renderRepositories(repositories) {
 
     if (repositories[1]) {
         lastProject.innerHTML = `
-            <h5>${[1].name || 'Repositório'}</h5>
+            <h5>${repositories[1].name || 'Repositório'}</h5>
             <img src="./src/assets/${repositories[1].name}.png" alt=${repositories[1].name}>
             <br>
-            <span>${[1].description || ''}<span>
+            <span>${repositories[1].description || ''}<span>
             <div class="repo-buttons">
-                <a href="${[1].html_url || '#'}" target="_blank">Mais informações</a>
-                <a href="${[1].homepage || '#'}" target="_blank">Visite</a>
+                <a href="${repositories[1].html_url || '#'}" target="_blank">Mais informações</a>
+                <a href="${repositories[1].homepage || '#'}" target="_blank">Visite</a>
             </div>
         `;
     } else {
