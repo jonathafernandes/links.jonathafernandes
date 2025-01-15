@@ -4,6 +4,7 @@ function updateDateTime() {
     let day = currentDateTime.getDate();
     let month = currentDateTime.getMonth() + 1;
     let year = currentDateTime.getFullYear();
+    const yearElement = document.getElementById('year');
 
     let hours = currentDateTime.getHours();
     let minutes = currentDateTime.getMinutes();
@@ -23,6 +24,8 @@ function updateDateTime() {
 
     const time = document.getElementById('time');
     time.innerHTML = formattedTime;
+
+    yearElement.innerHTML = year;
 }
 
 setInterval(updateDateTime, 1000);
