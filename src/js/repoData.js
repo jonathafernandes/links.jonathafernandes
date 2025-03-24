@@ -4,8 +4,8 @@ async function fetchData(url) {
         const allRepositories = response.data;
 
         const nextLink = response.headers.link &&
-                         response.headers.link.split(',')
-                               .find(link => link.includes('rel="next"'));
+            response.headers.link.split(',')
+                .find(link => link.includes('rel="next"'));
 
         if (nextLink) {
             const nextUrl = nextLink.split(';')[0].slice(1, -1);

@@ -256,6 +256,20 @@ body {
 .container header .modal-content button:hover {
   background: rgba(170, 170, 170, 0.3019607843);
 }
+.container .featured-link a {
+  position: relative;
+  color: #c7503e !important;
+  font-weight: 500;
+  padding-left: 8px;
+  border-left: 3px solid #c7503e;
+}
+.container .featured-link a:hover {
+  transform: translateX(2px);
+  transition: all 0.2s ease;
+}
+.container .featured-link i {
+  font-size: 0.6rem;
+}
 .container main {
   display: flex;
   align-items: center;
@@ -321,6 +335,13 @@ body {
   gap: 2rem;
   margin-top: 2rem;
 }
+@media (max-width: 786px) {
+  .container main .project-content .repo-buttons, .container main .bottom .repo-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
 .container main .project-content .repo-buttons a, .container main .bottom .repo-buttons a {
   border: 1px solid #514796;
   background: rgba(69, 89, 64, 0.2784313725);
@@ -330,6 +351,12 @@ body {
 .container main .project-content .repo-buttons a:hover, .container main .bottom .repo-buttons a:hover {
   background: #514796;
   color: #e5e5e5;
+}
+@media (max-width: 786px) {
+  .container main .project-content .repo-buttons a, .container main .bottom .repo-buttons a {
+    width: 100%;
+    text-align: center;
+  }
 }
 .container main .social ul {
   display: flex;
@@ -351,11 +378,6 @@ body {
 }
 .container main .social ul li a:hover {
   opacity: 0.8;
-}
-@media (max-width: 786px) {
-  .container main .social ul .last-link {
-    border-bottom: none;
-  }
 }
 .container main .bottom a:hover {
   opacity: 0.8;
